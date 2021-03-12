@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>oauth2-client-login-js-gitee</title>
+</head>
+<body>
+<p>
+    <button onclick="handleLoginGithub()">使用码云Gitee登录</button>
+</p>
+</body>
+<script>
+    //触发gitee登录
+    function handleLoginGithub() {
+        window.location.href = "https://gitee.com/oauth/authorize" +
+            "?client_id=351bbdcc7dda4258d87693c95a6e8797b00a8dc00b4461cb68ddfbb1b09d8711" +
+            "&redirect_uri=http://localhost:8084" +
+            "&response_type=code";
+    }
+</script>
+</html>

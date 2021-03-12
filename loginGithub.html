@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>oauth2-client-login-js-gitee</title>
+</head>
+<body>
+<p>
+    <button onclick="handleLoginGithub()">使用Github登录</button>
+</p>
+</body>
+<script>
+    //触发github登录
+    function handleLoginGithub() {
+        window.location.href = "https://github.com/login/oauth/authorize" +
+            "?client_id=1994fe209a6970a75a26" +
+            "&redirect_uri=http://localhost:8080" +
+            "&scope=" +
+            "&state=" +
+            "&allow_signup=" +
+            "&login="
+    }
+</script>
+</html>
